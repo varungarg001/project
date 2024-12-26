@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #414141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #212121;
+  padding: 5px;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#desc,
+#amount {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #414141;
+  color: #fff;
+}
+#desc::placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+#amount::placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+#btn {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.expense-list {
+  padding: 0;
+}
+
+.expense-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: gray;
+}
+
+.display {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
