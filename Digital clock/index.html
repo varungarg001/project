@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1c40f;
+        margin: 0;
+      }
+      .container {
+        background-color: rgba(0, 200, 255, 0.701);
+        color: white;
+        width: 300px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1></h1>
+    </div>
+  </body>
+  <script>
+    const container = document.querySelector(".container");
+    const h1 = document.querySelector("h1");
+    function calculate() {
+      let date = new Date().toLocaleTimeString();
+      h1.innerHTML = `${date}`;
+      container.appendChild(h1);
+    }
+
+    setInterval(calculate, 1000);
+  </script>
+</html>
